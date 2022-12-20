@@ -1,6 +1,6 @@
 # Investigating the role of CBX2 in breast cancer through analysis of differentially expressed genes
 
-### By Sojeong Gwon, Fang Shi, Joseph Tsenum, Cheng Zhang, Siming Zhao 
+### By Sojeong Gwon, Fang Shi, Joseph Luper Tsenum, Cheng Zhang, Siming Zhao 
 
 ### Genomics and Applied Bioinformatics Project
 
