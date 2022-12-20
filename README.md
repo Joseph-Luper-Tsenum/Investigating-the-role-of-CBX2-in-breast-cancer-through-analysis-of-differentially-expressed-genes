@@ -113,6 +113,9 @@ In the figure below, the six samples for MDA-MB-231 cell line were plotted using
 
                                    PCA result for MD-MBA-231 samples
                                    
+![image](https://user-images.githubusercontent.com/58364462/208567905-d5ee25b9-ecc8-453e-80d4-1abeaaa097d1.png)
+
+                                   
 The first principal component accounts for 50% of the sample variance, while the second principal component accounts for 41. However, no meaningful difference is observed between control and siCBX2-treated samples, and each replicate of the treatment cell line is most similar to its corresponding control replicate. At this point, the MD-MBA-231 was omitted from further analysis, due to a failure to successfully identify DEGs using the computational methods detailed above.
 
 #### Hierarchical clustering of MCF-7 cell line data by sample and gene
@@ -130,7 +133,7 @@ The hierarchically clustered heatmap above shows the distribution of up- and dow
 
 Pathway analysis visualizations were generated using Reactome’s web application. In the figure below, pathways are grouped by biological function. In the figure below, the size of each node reflects the number of biological agents (including proteins, genes, and other molecules) involved with each pathway, while lines represent a connection between a pathway and its sub-pathways. 
 
-                                      Reactome pathway analysis visualization. Pathways that are significantly upregulated are marked in yellow, and pathways that are downregulated are marked blue.
+ Reactome pathway analysis visualization. Pathways that are significantly upregulated are marked in yellow, and pathways that are downregulated are marked blue.
                                       
 ![image](https://user-images.githubusercontent.com/58364462/208564577-9b685ad5-a652-4481-8301-b391e2b043ca.png)
 
@@ -152,9 +155,9 @@ While our workflow successfully generated a robust list of DEGs for the MCF-7 ce
 
 This result differs from the originally published paper, which was successful in identifying up-regulated genes and pathways in MD-MBA-231 cells treated with siCBX2, compared to the controls. The analysis pipeline used by the authors of the original paper differed from our pipeline in several ways:
     
-    • For alignment, Bilton et al. used HiSAT2, whereas our pipeline used Kallisto. Previous studies (Liu et al., 2022) have indicated that Kallisto may lack sensitivity for lower-expression genes that would be detected using HiSAT2. Kallisto’s pseudoalignment method, while reducing computational needs, was demonstrated to sometimes produce a different number of DEGs in comparison with HiSAT2, which uses the burrows-wheeler transform to align reads to the reference. While our pipeline used a pre-built reference genome off of hg38 by Kallisto’s developers, HiSAT2 allows for a wider range of reference genome input formats and allows users to build their own reference genomes that may be more specific to the samples being aligned.
+• For alignment, Bilton et al. used HiSAT2, whereas our pipeline used Kallisto. Previous studies (Liu et al., 2022) have indicated that Kallisto may lack sensitivity for lower-expression genes that would be detected using HiSAT2. Kallisto’s pseudoalignment method, while reducing computational needs, was demonstrated to sometimes produce a different number of DEGs in comparison with HiSAT2, which uses the burrows-wheeler transform to align reads to the reference. While our pipeline used a pre-built reference genome off of hg38 by Kallisto’s developers, HiSAT2 allows for a wider range of reference genome input formats and allows users to build their own reference genomes that may be more specific to the samples being aligned.
     
-    • For quantifying gene expression, Bilton et al. used fragments per kilobase of transcript per million fragments mapped (FPKM) whereas Kallisto measures abundance in transcripts per million (TPM). Again, prior studies have shown that TPM and FPKM, which use different approaches to normalize for transcript length, reads per sample and sequencing biases, do not necessarily produce comparable results in downstream analysis like hierarchical even when applied to the same dataset (Dillies et al., 2013; Zhao et al., 2021).
+• For quantifying gene expression, Bilton et al. used fragments per kilobase of transcript per million fragments mapped (FPKM) whereas Kallisto measures abundance in transcripts per million (TPM). Again, prior studies have shown that TPM and FPKM, which use different approaches to normalize for transcript length, reads per sample and sequencing biases, do not necessarily produce comparable results in downstream analysis like hierarchical even when applied to the same dataset (Dillies et al., 2013; Zhao et al., 2021).
     
 In the mTORC1 genes highlighted in the paper, we did not observe the same statistically significant changes in expression between control and treatment groups. Two genes highlighted in the paper were TSC1 and PRKAA2. In our DESeq2 results, TSC1 had a log-fold change of only 0.067758, with an adjusted p-value of 0.99. PRKAA2 had log-fold change of -0.05702, with an adjusted p-value of 0.99.
 
