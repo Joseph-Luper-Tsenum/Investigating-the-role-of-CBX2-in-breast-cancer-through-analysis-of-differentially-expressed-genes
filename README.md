@@ -21,6 +21,8 @@ Proteins that regulate the gene expression process can be potential therapeutic 
 
 Datasets 
 
+The processed data can be downloaded here: https://usegalaxy.org/u/joseph_luper_tsenum/h/importedtojoseph-all-combined-with-grch38
+
 a. CBX2 Knockdown in MCF-7 cells 
 
 GSE198418 
