@@ -89,7 +89,7 @@ Differentially Expressed Gene (DEG) analysis using Kallisto and DESeq2
 
 Using DESeq2 on the Galaxy platform, differentially expressed genes (DEGs) were identified for both cell lines. A summary of the total number of DEGs for each cell line is shown in the figure below, separated by up- and down-regulated genes.
 
-                                 Total numbers of differentially expressed genes for MCF-7 and MD-MBA-231
+                      Total numbers of differentially expressed genes for MCF-7 and MD-MBA-231
                                  
 ![image](https://user-images.githubusercontent.com/58364462/208563613-49a861e0-71f5-49fc-bc60-526cd83e07cc.png)
 
@@ -97,7 +97,7 @@ For the MCF-7 cell line, there were a total of 5024 differentially expressed gen
    
 A list of the top 10 up- and down-regulated DEGs for the MCF7 cell lines treated with siCBX2-knockdown is listed below:
 
-                                  Top up- and down-regulated genes in MCF-7 cells with CBX2 knockdown
+                      Top up- and down-regulated genes in MCF-7 cells with CBX2 knockdown
       
 ![image](https://user-images.githubusercontent.com/58364462/208563743-e39139af-2827-47e5-943e-488b8441fbb8.png)
 
