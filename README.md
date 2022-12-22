@@ -186,7 +186,7 @@ Another gene that has been associated with breast cancer proliferation that was 
 he downregulation of these pathways and genes, all of which have been shown to be associated with greater progression of breast cancer when expressed at high levels, demonstrates the involvement of CBX2 in the expression of various genes that are directly involved in cancer cell proliferation, metastasis and development. The results of our analysis affirm the claim of the original authors that CBX2 is a potential target for breast cancer therapeutics, due to its influence on various significant biological pathways in breast cancers across multiple types.
 
 
-References
+### References
 
 1. Afgan, E., Baker, D., Batut, B., Van Den Beek, M., Bouvier, D., Čech, M., ... & Blankenberg, D. (2018). The Galaxy platform for accessible, reproducible and collaborative biomedical analyses: 2018 update. Nucleic acids research, 46(W1), W537-W544.
 
